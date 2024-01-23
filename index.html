@@ -1,13 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The official website of</title>
+    <title>The official website of UHP Hockey's</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-clr': '#FF4240',
+            'min-clr': 'rgba(255, 255, 255, 0.60)',
+
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .font-fm{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
 </head>
-<body>
-    
+
+<body class="font-fm">
+    <header class="md:container md:mx-auto px-22">
+        <nav class=mt-10>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-bold">
+                            <li class="text-bg-primary-clr"><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost font-extrabold text-4xl ">Hockey<span class=" gap-0 text-primary-clr">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li class="text-primary-clr font-bold "><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-primary-clr font-bold text-xl text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        
+            <div class="carousel w-full h-[550px]  mt-10 lg:relative">
+                <div id="slide1" class="carousel-item relative w-full ">
+                  <img src="Images/1.png" class="w-full rounded-2xl" />
+                  <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5  top-3/4">
+                    <a href="#slide4" class="btn btn-circle  bg-white  border-0">❮</a> 
+                    <a href="#slide2" class="btn btn-circle  bg-white    border-0">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full ">
+                  <img src="Images/photo-1616041042832-24ee0dff18d4.avif" class="w-full rounded-2xl" />
+                  <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5 top-3/4">
+                    <a href="#slide1" class="btn btn-circle bg-white    border-0">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-white    border-0">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full rounded-s">
+                  <img src="Images/00.jpg" class="w-full rounded-2xl" />
+                  <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5 top-3/4">
+                    <a href="#slide2" class="btn btn-circle bg-white    border-0">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-white    border-0">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full rounded-s">
+                  <img src="Images/000.jpg" class="w-full rounded-2xl" />
+                  
+                  <div class="absolute flex gap-3 transform -translate-y-1/2 left-5 right-5 top-3/4">
+                    <a href="#slide3" class="btn btn-circle bg-white   border-0">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-white   border-0">❯</a>
+                  </div>
+                </div>
+                <div class="bg-black text-white lg:w-[566px] lg:h-[165px] rounded-xl lg:absolute bottom-4 right-8 p-8">
+                    <h3 class="text-2xl  font-extrabold">Meet all the heroes from the field</h3>
+                    <p class="text-base text-min-clr">Here we bring you closer to the heart-pounding action, thrilling moments,and rich history of the incredible sport of hockey.</p>
+                  </div>
+              </div>
+              <div class=" lg:hidden bg-black text-white mt-6 rounded-xl  bottom-4 right-8 p-8">
+                <h3 class=" text-xl  font-extrabold">Meet all the heroes from the field</h3>
+                <p class="text-sm  text-min-clr">Here we bring you closer to the heart-pounding action, thrilling moments,and rich history of the incredible sport of hockey.</p>
+              </div>
+        
+    </header>
+    <main class="md:container md:mx-auto">
+        <hr class="border-dashed border mt-14">
+     <div class=" mt-10 text-center">
+        <h3 class="text-4xl font-extrabold mb-10">Professional Hockeys Club</h3>
+        <p class="text-sm text-stone-500">Get to know the powerhouse athletes who make up the heart and soul of National Team. Explore our team roster and learn <br> more about the players' stats, achievements, and personal stories.</p>
+        <hr class="border-dashed border mt-10">
+     </div>
+     <div class=" mt-14  grid justify-items-center gap-20 grid-cols-1 lg:grid-cols-4 ">
+        <div class="text-center ">
+            <div class="radial-progress text-red-600 rotate-180 w-[120px] h-[120px] mb-8" style="--value:87;" role="progressbar"><span class="-rotate-180 text-black font-extrabold text-3xl ">87%</span></div>
+            <h3 class="text-xl font-semibold mb-8" >Prayer Facility</h3>
+            <p class="text-base text-stone-500">There is no restriction on prayer.All can pray their respective prayers on time.</p>
+        </div>
+        <div class="text-center">
+            <div class="radial-progress text-green-500 rotate-180 w-[120px] h-[120px] mb-8" style="--value:95;" role="progressbar"><span class="-rotate-180 text-black font-extrabold text-3xl">95%</span></div>
+            <h3 class="text-xl mb-8 font-semibold">Experienced Coach</h3>
+            <p class="text-base text-stone-500r">We provide detailed information about their facilities, coaching staff, and training programs on their websites.</p>
+    </div>
+        <div class="text-center">
+            <div class="radial-progress text-amber-400 rotate-180 w-[120px] h-[120px] mb-8 " style="--value:90;" role="progressbar"><span class="-rotate-180 text-black font-extrabold text-3xl">90%</span></div>
+            <h3 class="text-xl font-semibold mb-8">Senior Player</h3>
+            <p class="text-base text-stone-500"> We provide detailed information about their facilities, coaching staff, and training programs on their websites.</p>
+        </div>
+    <div class="text-center">
+        <div class="radial-progress text-sky-500 rotate-180 w-[120px] h-[120px] mb-8" style="--value:80;" role="progressbar"><span class="-rotate-180 text-black font-extrabold text-3xl">80%</span></div>
+        <h3 class="text-xl font-semibold mb-8">Training Ground</h3>
+        <p class="text-base text-stone-500">We provide the best training ground,Check the official website of the hockey club.</p>
+    </div>
+     </div>
+
+
+     <hr class="border-dashed border mt-14">
+     <div class=" mt-10 text-center">
+        <h3 class="text-4xl font-extrabold mb-10">Program Sections</h3>
+        <p class="text-sm text-stone-500">Specialized programs focusing on the holistic development of players, including <br> on-ice skills, off-ice training, and mental conditioning.</p>
+        <hr class="border-dashed border mt-16">
+     </div>
+     <div class="grid grid-cols-2 gap-6 ">
+       <div class="lg:w-[573px]"><img class="lg:w-[573px]" src="Images/2.png" alt=""></div>
+       <div class="lg:w-[573px]"><img class="lg:w-[573px]" src="Images/3.png" alt=""></div>
+       <div class="" ><img class="lg:h-[450px]" src="Images/4.png" alt=""></div>
+     </div>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
